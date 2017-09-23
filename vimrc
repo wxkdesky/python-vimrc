@@ -93,7 +93,7 @@ set clipboard=unnamed                       " use system clipboard
 
 set exrc                                    " enable usage of additional .vimrc files from working directory
 set secure                                  " prohibit .vimrc files to execute shell, create files, etc...
-
+:let mapleader = ","                        " set mapleader
 " Additional mappings for Esc (useful for MacBook with touch bar)
 inoremap jj <Esc>
 inoremap jk <Esc>
@@ -135,7 +135,7 @@ autocmd BufWinLeave *.py :TagbarClose
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']     " Ignore files in NERDTree
 let NERDTreeWinSize=40
 autocmd VimEnter * if !argc() | NERDTree | endif  " Load NERDTree only if vim is run without arguments
-nmap " :NERDTreeToggle<CR>
+nmap <F2> :NERDTreeToggle<CR>
 
 "=====================================================
 "" SnipMate settings
